@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Big John";
+    src: url(font/BIG JOHN.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "Slim Jee";
+    src: url(font/Slim joe.otf) format("opentype");
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+.top-bar {
+    padding: .5rem;
+    padding-bottom: 0.2rem;
+    margin: none;
+    background-color: #242456;
+}
+
+.menu {
+    background-color: none;
+}
+
+.menu li {
+    padding: none;
+    margin: none;
+    background-color: #242456;
+    color: white;
+}
+
+.menu li a {
+    color: white;
+    font-size: .9em;
+}
+
+.menu-text {
+    font-family: "Big John", sans-serif;
+    font-size: 1.25em;
+}
+
+#skinny {
+    font-family: "Slim Joe", sans-serif;
+}
+
+h4 {
+    font-family: "Work Sans", sans-serif;
+}
+
+.row {
+    padding: 2em;
+}
+
+.callout.large.secondary {
+    background-color: #242456;
+    padding: 2rem;
+}
+
+p {
+    font-size: .8em;
+}
+
+.callout.large.secondary p {
+    color: white;
+}
+
+.callout.large.secondary h5 {
+    color: #ffc425;
+}
