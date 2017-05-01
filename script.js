@@ -18,7 +18,6 @@ $('.categories-menu.menu.nested').on('click', '.more', function () {
 $(document).ready(function () {
     $('#cartpage').hide();
     $('#cartbutton').click(function () {
-        $('#homepage').hide();
-        $('#uploadpage').show(1000);
+        $('#cartpage').show(1000);
     });
 });
