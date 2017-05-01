@@ -457,6 +457,14 @@ button .product-card-color-option .blue {
     right: 12px;
 }
 
+.multi-step-checkout-process .accordion-title {
+		font-family: "Work Sans", sans-serif;
+}
+
+.multi-step-checkout-process {
+	width: 90%;
+	margin: 0 auto;
+}
 
 /*footer*/
 
