@@ -56,16 +56,16 @@ h4 {
 }
 
 .menu>li>a>span {
-	vertical-align: inherit;
+    vertical-align: inherit;
 }
 
 .menu>li>a {
-	line-height: 18px;
-	display: inline;
+    line-height: 18px;
+    display: inline;
 }
 
 .top-bar-right {
-	margin-top: 5px;
+    margin-top: 5px;
 }
 
 .product-card-container {
@@ -132,6 +132,7 @@ h4 {
     height: 25px;
     width: 25px;
 }
+
 
 /*
 button .black {
@@ -465,6 +466,72 @@ button .product-card-color-option .blue {
 	width: 90%;
 	margin: 0 auto;
 }
+
+/*modal*/
+
+#cartmodal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: #FFFFFF;
+}
+
+.panel {
+    width: 500px;
+    height: 300px;
+    box-shadow: 5px 5px 0px 0px rgba(148, 214, 247, 0.5);
+}
+
+.panel > .panel-heading {
+    background-image: none;
+    background-color: #5dc7fc;
+    color: white;
+}
+
+.panel-title {
+    font-size: 1.5em;
+}
+
+label {
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.form-control {
+    width: 200px;
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: grey;
+}
+
+.form-control:active,
+.form-control:focus,
+.form-control:hover {
+    border-radius: none;
+    box-shadow: none;
+    border-bottom-color: #5dc7fc;
+}
+
+.panel-body {
+    font-size: 1.25em;
+}
+
+.form-group.sub {
+    font-size: 14px;
+}
+
+#sendbutton {
+    font-size: 0.8em;
+    float: right;
+    margin-top: -5px;
+}
+
 
 /*footer*/
 

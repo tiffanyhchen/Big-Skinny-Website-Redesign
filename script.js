@@ -15,3 +15,10 @@ $('.categories-menu.menu.nested').on('click', '.more', function () {
     }
     $(this).siblings('li.toggleable').slideToggle();
 });
+$(document).ready(function () {
+    $('#cartpage').hide();
+    $('#cartbutton').click(function () {
+        $('#homepage').hide();
+        $('#uploadpage').show(1000);
+    });
+});

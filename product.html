@@ -28,7 +28,25 @@
         </div>
     </div>
     <!-- End Top Bar -->
-    <button class="button-hover-addcart button"><span>Add to cart</span><i class="fa fa-shopping-cart" style="color:#1779ba;"></i></button>
+    <button class="button-hover-addcart button" id="cartbutton"><span>Add to cart</span><i class="fa fa-shopping-cart" style="color:#1779ba;"></i></button>
+    <div id="cartpage" style="display: none;">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">YOUR CART</h3> </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <label for="usr">Enter in your Andrew ID.</label>
+                    <input type="text" class="form-control" id="andrewID" placeholder="Andrew ID"> </div>
+                <label class="custom-file">
+                    <label>Select a file to upload. </label>
+                    <div class="form-group sub">
+                        <input type="file" id="file" class="custom-file-input"> <span class="custom-file-control"></span> </div>
+                    <div style="font-size: 12px">*File must be less than 25 MB.</div>
+                </label>
+                <button type="button" id="sendbutton" class="btn btn-default navbar-btn upload">SEND TO PRINT QUEUE</button>
+            </div>
+        </div>
+    </div>
     <div class="callout large secondary">
         <div class="row">
             <div class="large-4 columns">
@@ -47,6 +65,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script src="script.js"></script>
     <script>
         $(document).foundation();
     </script>
