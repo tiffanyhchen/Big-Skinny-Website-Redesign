@@ -196,6 +196,11 @@ h4 {
     background-color: #fefefe;
 }
 
+.is-accordion-submenu-parent>a::after {
+	position: absolute;
+	margin-right: -17px;
+}
+
 .product-filters li {
     background-color: #fefefe;
 }
