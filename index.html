@@ -17,33 +17,68 @@
             <ul class="menu top">
                 <li class="menu-text" margin: 0 auto;><a href="index.html">BIG<span id="skinny">skinny</span></a></li>
                 <li><a href="shop.html">SHOP</a></li>
-                <li><a href="">SALE</a></li>
+                <li><a href="streetfair.html">PERFECT FIT</a></li>
             </ul>
         </div>
         <div class="top-bar-right">
-            <ul class="menu">
-                <li><a href="#"><i class="fi-shopping-cart" style="font-size: 20px;"></i></a></li>
-                <li><a href="#">HELP</a></li>
+            <ul class="dropdown menu" data-dropdown-menu style="color: white;">
+                <li> <a data-open="cartModal"><i class="fi-shopping-cart" style="font-size: 20px;"></i></a> </li>
+                <li><a href="#">ABOUT</a>
+                    <ul class="menu">
+                        <li><a href="#">wallets</a></li>
+                        <li><a href="#">locations</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
     <!-- End Top Bar -->
-		<div class="slideshow-container">
-				<div class="mySlides fade">
-					<img src="images/Artboard%201.png">
-				</div>
-				<div class="mySlides fade">
-					<img src="images/Artboard%202.png">
-				</div>
-				<div class="mySlides fade">
-					<img src="images/Artboard%203.png">
-				</div>
-				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlides(1)">&#10095;</a>
-		</div>
-		<br>
-		<script src="js/slideshow.js"></script>
-	
+    <div class="reveal" id="cartModal" data-reveal style="max-width: 500px;">
+        <div class="checkout-summary">
+            <div class="checkout-summary-title">
+                <h5>Your Order</h5>
+                <h5>2 Items</h5> </div>
+            <div class="checkout-summary-item"> <img src="images/wallet-images/mens/180/rfid-blocking-leather-bi-fold-114.jpg" style="width: 100px; height: 100px;" />
+                <div class="item-name"> <a>RFID Blocking Leather Bi-fold</a>
+                    <p><span class="title">Color: </span>Black</p>
+                    <p><span class="title">Size: </span>M</p>
+                </div>
+                <div class="item-price">
+                    <p class="title">$41.95</p> <a href="#">Remove</a> </div>
+            </div>
+            <div class="checkout-summary-item"> <img src="images/wallet-images/mens/180/multi-pocket-bi-fold-wallet-316.jpg" style="width: 100px; height: 100px;">
+                <div class="item-name"> <a>Multi-Pocket Bi-Fold Wallet</a>
+                    <p><span class="title">Color: </span>Blue</p>
+                    <p><span class="title">Size: </span>M</p>
+                </div>
+                <div class="item-price">
+                    <p class="title">$24.95</p> <a href="#">Remove</a> </div>
+            </div>
+            <div class="checkout-summary-details">
+                <div class="left">
+                    <p><strong>Subtotal:</strong></p>
+                    <p><strong>Tax:</strong></p>
+                    <p><strong>Total:</strong></p>
+                </div>
+                <div class="right">
+                    <p>$66.90</p>
+                    <p>$2.00</p>
+                    <p>$68.90</p>
+                </div>
+            </div>
+            <a href="checkout.html">
+                <button class="button expanded">Proceed to Checkout</button>
+            </a>
+        </div>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade"> <img src="images/Artboard%201.png"> </div>
+        <div class="mySlides fade"> <img src="images/Artboard%202.png"> </div>
+        <div class="mySlides fade">
+            <a href="streetfair.html"><img src="images/Artboard%203.png"></a>
+        </div> <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> </div>
+    <br>
+    <script src="js/slideshow.js"></script>
     <div class="row">
         <div class="medium-4 columns">
             <h4>MEN</h4>

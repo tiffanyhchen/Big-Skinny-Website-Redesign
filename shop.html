@@ -14,20 +14,25 @@
     <!-- Start Top Bar -->
     <div class="top-bar">
         <div class="top-bar-left">
-            <ul class="menu">
+            <ul class="menu top">
                 <li class="menu-text" margin: 0 auto;><a href="index.html">BIG<span id="skinny">skinny</span></a></li>
                 <li><a href="shop.html">SHOP</a></li>
-                <li><a href="#">SALE</a></li>
+                <li><a href="streetfair.html">PERFECT FIT</a></li>
             </ul>
         </div>
         <div class="top-bar-right">
-            <ul class="menu">
-                <li> <a data-open="exampleModal1"><i class="fi-shopping-cart" style="font-size: 20px;"></i></a> </li>
-                <li><a href="#">HELP</a></li>
+            <ul class="dropdown menu" data-dropdown-menu style="color: white;">
+                <li> <a data-open="cartModal"><i class="fi-shopping-cart" style="font-size: 20px;"></i></a> </li>
+                <li><a href="#">ABOUT</a>
+                    <ul class="menu">
+                        <li><a href="#">wallets</a></li>
+                        <li><a href="#">locations</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
-    <div class="reveal" id="exampleModal1" data-reveal style="max-width: 500px;">
+    <div class="reveal" id="cartModal" data-reveal style="max-width: 500px;">
         <div class="checkout-summary">
             <div class="checkout-summary-title">
                 <h5>Your Order</h5>
@@ -60,7 +65,9 @@
                     <p>$68.90</p>
                 </div>
             </div>
-            <a href="checkout.html"><button class="button expanded">Proceed to Checkout</button></a>
+            <a href="checkout.html">
+                <button class="button expanded">Proceed to Checkout</button>
+            </a>
         </div>
     </div>
     <!-- End Top Bar -->

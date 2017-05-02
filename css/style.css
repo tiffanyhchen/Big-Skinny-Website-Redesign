@@ -30,52 +30,67 @@ h4 {
     background-color: #242456;
 }
 
+.dropdown.menu .has-submenu.is-down-arrow>a::after {
+    border-top-color: white;
+}
+
+
 /* SOME SLIDESHOW CODE BELOW TAKEN FROM W3SCHOOLS */
 
+
 /* Slideshow container */
+
 .slideshow-container {
-  position: relative;
-  margin: auto;
+    position: relative;
+    margin: auto;
 }
 
 .mySlides {
-  display: none;
-	position: relative;
+    display: none;
+    position: relative;
 }
 
 .mySlides img {
-	background:rgba(0,0,0,0.5);
-	width: 100%;
-	max-width: 100%;
-	height:auto;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
+
 
 /* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-	background-color: lightgray;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    background-color: lightgray;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
 }
+
 
 /* Position the "next button" to the right */
+
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
+
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-	color: white;
-  background-color: rgba(0,0,0,0.8);
+
+.prev:hover,
+.next:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .menu {
@@ -245,8 +260,8 @@ h4 {
 }
 
 .is-accordion-submenu-parent>a::after {
-	position: absolute;
-	margin-right: -17px;
+    position: absolute;
+    margin-right: -17px;
 }
 
 .product-filters li {
@@ -507,6 +522,7 @@ h4 {
 .checkout-summary {
     max-width: 500px;
     background-color: #fefefe;
+    outline: none;
 }
 
 .checkout-summary-title {
@@ -517,12 +533,10 @@ h4 {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 1rem;
-    border: 1px solid #e6e6e6;
+    border: none;
 }
 
 .checkout-summary-item {
-    border-left: 1px solid #e6e6e6;
-    border-right: 1px solid #e6e6e6;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -538,7 +552,17 @@ h4 {
     padding: 0 1rem;
 }
 
-.checkout-summary-item .item-name p,
+.checkout-summary button {
+    background-color: #242456;
+    color: #ffffff;
+}
+
+.checkout-summary button:hover {
+    background-color: #242456;
+    color: #ffc425;
+}
+
+.checkout-summary button: .checkout-summary-item .item-name p,
 .checkout-summary-item .item-price p {
     margin: 0;
     padding: 0;
@@ -556,8 +580,72 @@ h4 {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 1rem;
-    border: 1px solid #e6e6e6;
+    border: none;
     border-top: none;
+}
+
+#body {
+    background-image: url("../images/quiz/background.jpg");
+    margin: 0;
+}
+
+#quiz {
+    margin: 12em auto;
+    max-width: 400px;
+    height: 300px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+#quiz .button {
+    font-size: 1.2em;
+    background-color: #ffc425;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+#intro {
+    text-align: center;
+}
+
+#intro h3 {
+    font-size: 3em;
+    color: #ffc425;
+}
+
+#intro p {
+    font-size: 1.2em;
+}
+
+.question label {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.image_picker_image {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+ul.thumbnails.image_picker_selector li .thumbnail {
+    background: none;
+    border: 2px #FFFFFF solid;
+}
+
+ul.thumbnails.image_picker_selector li .thumbnail.selected {
+    background: none;
+}
+
+ul.thumbnails.image_picker_selector li {
+    display: block;
+    margin: 15px;
+}
+
+.thumbnail.selected {
+    -moz-box-shadow: 5px 5px 5px #ffc425;
+    -webkit-box-shadow: 5px 5px 5px #ffc425;
+    box-shadow: 5px 5px 5px #ffc425;
 }
 
 
