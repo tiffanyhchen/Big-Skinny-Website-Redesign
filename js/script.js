@@ -20,4 +20,8 @@ $(document).ready(function () {
         $("#intro").hide();
         $("#question1").show(1000);
     });
+    $("#next1").click(function () {
+        $("#question1").hide();
+        $("#question2").show(1000);
+    });
 });
