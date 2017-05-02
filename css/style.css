@@ -30,6 +30,54 @@ h4 {
     background-color: #242456;
 }
 
+/* SOME SLIDESHOW CODE BELOW TAKEN FROM W3SCHOOLS */
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+	position: relative;
+}
+
+.mySlides img {
+	background:rgba(0,0,0,0.5);
+	width: 100%;
+	max-width: 100%;
+	height:auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+	background-color: lightgray;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	color: white;
+  background-color: rgba(0,0,0,0.8);
+}
+
 .menu {
     background-color: none;
 }
@@ -449,7 +497,7 @@ h4 {
 }
 
 .multi-step-checkout-process {
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
 }
 
