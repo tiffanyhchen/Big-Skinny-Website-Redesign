@@ -37,7 +37,7 @@
             </div>
         </div>
         <div id="quiz">
-            <div id="intro">
+            <div id="intro" class="info">
                 <h3>PERFECT FIT</h3>
                 <p>Unsure what kind of wallet you're looking for? Click begin to find a wallet just for you.</p> <a href="#" class="button" id="start">START</a> </div>
             <div id="question1" class="question" style="display:none;">
@@ -58,9 +58,14 @@
                         <option data-img-src='images/quiz/male.png' value='google.jpg'>Men's</option>
                     </div>
                 </select> <a href="#" class="button dir" style="float:left;">Back</a> <a href="#" class="button" id="next2" style="float:right; margin: 0;">Next</a> </div>
-            <div id="results">
-                <h3>YOUR PERFECT FIT</h3>
-                <p>Check out your curated items</p>
+            <div class="results info img-res" style="display:none;">
+                <h3 style="font-size: 2em;">YOUR PERFECT FIT</h3>
+                <p>Check out your curated item.</p>
+                <div class="imgcontainer"> <img src="images/wallet-images/mens/350/black-power-card-4.png" alt="Avatar" class="result-image">
+                    <div class="overlay">
+                        <div class="text">Black Wallet</br> <span style="font-size: .6em;">RFID functionality, blah blah</span> </div>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="js/image-picker.min.js"></script>

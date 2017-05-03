@@ -636,12 +636,14 @@ h4 {
     width: 50%;
     border: 1px solid white;
     background: white;
+    margin: auto;
 }
 
 .result-image {
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+    margin: auto;
 }
 
 .overlay {
@@ -649,7 +651,7 @@ h4 {
     bottom: 100%;
     left: 0;
     right: 0;
-    background-color: #008CBA;
+    background-color: #242456;
     overflow: hidden;
     width: 100%;
     height: 0;
