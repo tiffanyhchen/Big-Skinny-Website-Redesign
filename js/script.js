@@ -24,4 +24,13 @@ $(document).ready(function () {
         $("#question1").hide();
         $("#question2").show(1000);
     });
+    $("#back1").click(function () {
+        $("#question1").hide();
+        $("#intro").show(1000);
+    });
+    $("#next2").click(function () {
+        $("#question2").hide();
+        $(".results").show(1000);
+        $(".results-img").show(1000);
+    });
 });
