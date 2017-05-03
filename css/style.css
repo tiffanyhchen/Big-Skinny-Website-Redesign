@@ -516,6 +516,20 @@ h4 {
     margin: 0 auto;
 }
 
+#about-container {
+    margin: 10%;
+    font-family: "Work Sans", sans-serif;
+}
+
+#about-container h1 {
+    font-size: 3em;
+    color: #242456;
+}
+
+#map {
+    margin: auto 20% auto 20%;
+}
+
 
 /*modal*/
 
@@ -584,7 +598,7 @@ h4 {
     border-top: none;
 }
 
-#body {
+#stfbody {
     background-image: url("../images/quiz/background.jpg");
     margin: 0;
 }

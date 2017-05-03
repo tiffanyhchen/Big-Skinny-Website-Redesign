@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div id="stfbody">
+    <div id="body">
         <!-- Start Top Bar -->
         <div class="top-bar">
             <div class="top-bar-left">
@@ -36,39 +36,13 @@
                 </ul>
             </div>
         </div>
-        <div id="quiz">
-            <div id="intro" class="info">
-                <h3>PERFECT FIT</h3>
-                <p>Unsure what kind of wallet you're looking for? Click begin to find a wallet just for you.</p> <a href="#" class="button" id="start">START</a> </div>
-            <div id="question1" class="question" style="display:none;">
-                <label>What is your gender?</label>
-                <select id="selectImage" class="image-picker">
-                    <option value=""></option>
-                    <div class="center-img">
-                        <option data-img-src='images/quiz/female.png' value='4.jpg'>Women's</option>
-                        <option data-img-src='images/quiz/male.png' value='google.jpg'>Men's</option>
-                    </div>
-                </select> <a href="#" id="back1" class="button dir" style="float:left;">Back</a> <a href="#" class="button" id="next1" style="float:right; margin: 0;">Next</a> </div>
-            <div id="question2" class="question" style="display:none;">
-                <label>What is your age?</label>
-                <select id="selectImage" class="image-picker">
-                    <option value=""></option>
-                    <div class="center-img">
-                        <option data-img-src='images/quiz/female.png' value='4.jpg'>Women's</option>
-                        <option data-img-src='images/quiz/male.png' value='google.jpg'>Men's</option>
-                    </div>
-                </select> <a href="#" class="button dir" style="float:left;">Back</a> <a href="#" class="button" id="next2" style="float:right; margin: 0;">Next</a> </div>
-            <div class="results info img-res" style="display:none;">
-                <h3 style="font-size: 2em;">YOUR PERFECT FIT</h3>
-                <p>Check out your curated item.</p>
-                <div class="imgcontainer"> <img src="images/wallet-images/mens/350/black-power-card-4.png" alt="Avatar" class="result-image">
-                    <div class="overlay">
-                        <div class="text">Black Wallet</br> <span style="font-size: .6em;">RFID functionality, blah blah</span> </div>
-                    </div>
-                </div>
+        <div id="about-container">
+            <h1>LOCATIONS</h1>
+            <p style="font-size: 1em;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1nrjyznmZ7U06pjcdOuldcNHh5fE&hl=en" width="640" height="480"></iframe>
             </div>
         </div>
-        <script src="js/image-picker.min.js"></script>
         <div class="reveal" id="cartModal" data-reveal style="max-width: 500px;">
             <div class="checkout-summary">
                 <div class="checkout-summary-title">
@@ -124,27 +98,28 @@
                 </div>
             </div>
         </div>
-        <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-        <script src="js/script.js"></script>
-        <script>
-            $(document).foundation();
-        </script>
-        <script src="js/image-picker.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $("#selectImage").imagepicker({
-                    hide_select: false
-                });
-                var $container = $('.image_picker_selector');
-                // initialize
-                $container.imagesLoaded(function () {
-                    $container.masonry({
-                        columnWidth: 30
-                        , itemSelector: '.thumbnail'
-                    });
+    </div>
+    <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+    <script src="js/image-picker.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#selectImage").imagepicker({
+                hide_select: false
+            });
+            var $container = $('.image_picker_selector');
+            // initialize
+            $container.imagesLoaded(function () {
+                $container.masonry({
+                    columnWidth: 30
+                    , itemSelector: '.thumbnail'
                 });
             });
-        </script>
+        });
+    </script>
 </body>
 
 </html>
